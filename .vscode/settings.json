@@ -1,6 +1,7 @@
 {
   "files.exclude": {
     "**/node_modules": true,
+    "**/*.d.ts": true,
     "**/.next": true
   },
   "i18n-ally.localesPaths": [
