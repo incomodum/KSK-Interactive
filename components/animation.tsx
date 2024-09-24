@@ -34,20 +34,15 @@ const useIncreaseNumberAnimation = ({ endNumber, speed = 10 }: UseIncreaseNumber
 
 // Define the type for the component props
 interface NumberAnimationProps {
-	id: string
 	endNumber: number
 	speed: number
 }
 
 // Example Component using the custom hook with types
-const NumberAnimation: React.FC<NumberAnimationProps> = ({ id, endNumber, speed }) => {
+const NumberAnimation: React.FC<NumberAnimationProps> = ({ endNumber, speed }) => {
 	const currentNumber = useIncreaseNumberAnimation({ endNumber, speed })
 
-	return (
-		<div id={id}>
-			<h1 className="text-2xl font-bold text-[#194E8D]">{currentNumber}</h1>
-		</div>
-	)
+	return <h1 className="text-2xl w-fit font-bold text-[#194E8D]">{currentNumber}</h1>
 }
 
 export default NumberAnimation

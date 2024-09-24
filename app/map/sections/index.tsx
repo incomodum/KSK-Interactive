@@ -26,6 +26,16 @@ const Sections: SectionProps[] = [
 		active: false
 	},
 	{
+		name: "Diaľnice a rýchlostné cesty",
+		layer: () => <Dialnice />,
+		active: false
+	},
+	{
+		name: "Čističky Odpadových Vôd",
+		layer: () => <Cisticky />,
+		active: false
+	},
+	{
 		name: "Obce",
 		layer: () => <Obce />,
 		active: false
@@ -40,6 +50,8 @@ const Sections: SectionProps[] = [
 import { create } from "zustand"
 import { combine } from "zustand/middleware"
 import Zeleznice from "./zeleznice"
+import Cisticky from "./cisticky"
+import Dialnice from "./dialnice"
 
 export const useLayerStore = create(
 	combine({ layers: Sections }, (set, get) => ({

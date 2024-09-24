@@ -4,12 +4,12 @@ import schools from "./skoly_zriadovatel_ksk_fewer.json"
 import type { MapSection } from "../types"
 
 export default function Schools() {
-	const { opacity = 0.2, blur = 0.3, color = "#009A03" }: MapSection = {}
+	const { opacity = 0.2, blur = 0.3, color = "#74E077" }: MapSection = {}
 	const layerStyle: LayerProps = {
 		id: "schools",
 		type: "circle",
 		paint: {
-			"circle-radius": ["interpolate", ["exponential", 2], ["zoom"], 0, 0, 20, 40000],
+			"circle-radius": ["interpolate", ["exponential", 2], ["zoom"], 0, 0, 20, 200000],
 			"circle-color": color,
 			"circle-opacity": opacity,
 			"circle-blur": blur
@@ -22,18 +22,7 @@ export default function Schools() {
 		source: "points",
 		layout: {
 			"icon-image": "school",
-			"icon-size": [
-				"interpolate",
-				// Set the exponential rate of change to 1.5
-				["exponential", 1.5],
-				["zoom"],
-				// When zoom is 10, icon will be 50% size.
-				10,
-				0.1,
-				// When zoom is 22, icon will be 10% size.
-				22,
-				0.2
-			]
+			"icon-size": ["interpolate", ["exponential", 1.5], ["zoom"], 10, 1, 22, 0.7]
 		}
 	}
 	return (
