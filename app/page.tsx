@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { Carousel, CarouselContent, CarouselItem } from "~/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
+import NumberAnimation from "~/components/animation"
 
 export default function Home() {
 	return (
@@ -76,7 +77,7 @@ export default function Home() {
 									className="w-full bg-[#9C9C9C] cursor-not-allowed text-white rounded-[14px] py-3 font-bold"
 									type="button"
 								>
-									Coming soon
+									Pripravujeme
 								</button>
 							</div>
 						</CarouselItem>
@@ -122,11 +123,14 @@ export default function Home() {
 				</Carousel>
 			</main>
 			<section className="w-full flex flex-col items-center gap-10">
-				<h2 className="text-3xl text-start w-full font-bold max-w-[1500px] px-3">
+				<h2 className="text-3xl text-start w-full font-bold max-w-[1500px] px-44 mt-10">
 					Aktuality v regionálnom <b className="text-[#194E8D]">rozvoji</b>
 				</h2>
-				<div className="max-w-full w-full overflow-x-scroll justify-center flex flex-row gap-11 px-2 md:px-10">
-					<div className="rounded-[20px] h-[267px] min-w-full md:min-w-[619px] relative overflow-clip isolate">
+				<div className="max-w-full w-full overflow-x-scroll justify-center flex flex-row gap-11 px-2 md:px-10 no-scrollbar">
+					<Link
+						className="rounded-[20px] h-[267px] min-w-full md:min-w-[619px] relative overflow-clip isolate"
+						href="https://web.vucke.sk/sk/novinky/prichod-volva-vyvola-masivne-investicie-aj-kosickom-kraji.html"
+					>
 						<img
 							src="https://cdn.sita.sk/sites/32/2023/02/b90a1341-1-scaled-1.jpg"
 							alt=""
@@ -136,8 +140,11 @@ export default function Home() {
 							<p>18.8.2024</p>
 							<p>Príchod Volva vyvolá masívne investície aj v Košickom kraji</p>
 						</div>
-					</div>
-					<div className="rounded-[20px] h-[267px] min-w-full md:min-w-[619px] relative overflow-clip isolate">
+					</Link>
+					<Link
+						className="rounded-[20px] h-[267px] min-w-full md:min-w-[619px] relative overflow-clip isolate"
+						href="https://web.vucke.sk/sk/kompetencie/regionalny-rozvoj/aktuality/kosicky-kraj-bude-pomocou-hackathonu-hladat-napad-ako-vytvorit-inovativny-regionalny-rozvojovy-porta.html"
+					>
 						<img
 							src="https://www.hacknime.to/wp-content/uploads/2022/11/banner-3.jpg"
 							alt=""
@@ -147,8 +154,11 @@ export default function Home() {
 							<p>23.9.2024</p>
 							<p>Košický kraj bude pomocou hackathonu hľadať nápad, ako vytvoriť inovatívny regionálny rozvojový portál</p>
 						</div>
-					</div>
-					<div className="rounded-[20px] h-[267px] min-w-full md:min-w-[619px] relative overflow-clip isolate">
+					</Link>
+					<Link
+						className="rounded-[20px] h-[267px] min-w-full md:min-w-[619px] relative overflow-clip isolate"
+						href="https://web.vucke.sk/sk/kompetencie/regionalny-rozvoj/aktuality/vystavba-noveho-pavilonu-spisskonovoveskej-nemocnice-oficialne-spustena.html"
+					>
 						<img
 							src="https://www.asb.sk/wp-content/uploads/2024/09/nemocnica-spisska-nova-ves-1.jpg"
 							alt=""
@@ -157,6 +167,48 @@ export default function Home() {
 						<div className="flex flex-col h-full justify-between p-5 text-white font-bold text-2xl bg-gradient-to-t from-black to-[#00000000]">
 							<p>16.9.2024</p>
 							<p>Výstavba nového pavilónu Nemocnice v Spišskej Novej Vsi oficiálne spustená</p>
+						</div>
+					</Link>
+				</div>
+			</section>
+			<section>
+				<h2 className="text-3xl text-center w-full font-bold max-w-[1500px] px-44 mt-10">
+					Košický <b className="text-[#194E8D]">kraj</b>
+				</h2>
+				<div className="flex flex-col mt-10">
+					<div className="flex flex-row w-full justify-center gap-80  text-center">
+						<div className="flex flex-col">
+							<NumberAnimation id="animated-number" endNumber={440} speed={1} />
+							<p className="text-xl">obcí</p>
+						</div>
+						<div className="flex flex-col">
+							<NumberAnimation id="animated-number" endNumber={17} speed={10} />
+							<p>miest</p>
+						</div>
+						<div className="flex flex-col">
+							<NumberAnimation id="animated-number" endNumber={11} speed={100} />
+							<p>okresov</p>
+						</div>
+					</div>
+					<div className="flex flex-row  w-full justify-center gap-80 mt-10  text-center">
+						<div className="flex flex-col text-center">
+							<NumberAnimation id="animated-number" endNumber={800414} speed={1} />
+							<p>obyvatelov</p>
+						</div>
+						<div className="flex flex-col">
+							<NumberAnimation id="animated-number" endNumber={6753} speed={1} />
+							<p>
+								Rozloha
+								<br /> (km²)
+							</p>
+						</div>
+						<div className="flex flex-col">
+							<NumberAnimation id="animated-number" endNumber={119} speed={1} />
+							<p>
+								hustota
+								<br />
+								zaludnenia (ob./km²)
+							</p>
 						</div>
 					</div>
 				</div>
