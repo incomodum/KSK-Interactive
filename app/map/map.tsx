@@ -5,8 +5,19 @@ import MapContainer from "react-map-gl/maplibre"
 
 import Schools from "./sections/schools"
 import { Search } from "lucide-react"
+import type { MapLibreEvent } from "maplibre-gl"
 
 export default function MapComponent() {
+	function onLoad(e: MapLibreEvent) {
+		const school = new Image()
+		school.onload = () => {
+			if (!e.target?.hasImage("school")) {
+				e.target.addImage("school", school, { sdf: true })
+			}
+		}
+		school.src = "/school.svg"
+	}
+
 	return (
 		<div className="relative w-full h-full">
 			<MapContainer
@@ -15,8 +26,9 @@ export default function MapComponent() {
 					longitude: 21.279611,
 					zoom: 9
 				}}
-				minZoom={8}
+				minZoom={9}
 				maxZoom={18}
+				onLoad={onLoad}
 				style={{ width: "100%", height: "100%", zIndex: 1 }}
 				mapStyle="https://api.maptiler.com/maps/streets/style.json?key=MXHW1WQksbFLUTsILGLR"
 				interactiveLayerIds={["data"]}
