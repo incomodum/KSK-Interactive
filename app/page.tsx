@@ -175,7 +175,7 @@ export default function Home() {
 				<h2 className="text-3xl text-center w-full font-bold max-w-[1500px] px-44 mt-10">
 					Košický <b className="text-[#194E8D]">kraj</b>
 				</h2>
-				<div className="grid md:grid-rows-2 md:grid-cols-3 grid-rows-3 grid-cols-2 gap-x-[200px] px-8 w-full max-w-[1500px] mt-10">
+				<div className="grid md:grid-rows-2 md:grid-cols-3 grid-rows-3 grid-cols-2 gap-x-16 md:gap-x-[200px] px-8 w-full max-w-[1500px] mt-10">
 					<div className="flex flex-col justify-center text-center items-center">
 						<NumberAnimation endNumber={440} speed={1} />
 						<p className="text-xl">obcí</p>

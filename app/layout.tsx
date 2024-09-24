@@ -33,7 +33,11 @@ export default async function RootLayout({
 
 	return (
 		<html lang={locale}>
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased overscroll-contain`}>
+			<head>
+				<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+				<link rel="icon shortcut" type="image/x-icon" href="/favicon.ico" sizes="24x24" />
+			</head>
+			<body className={`${geistSans.variable} ${geistMono.variable} antialiased overscroll-contain overflow-x-hidden`}>
 				<NextIntlClientProvider messages={messages}>
 					<Header />
 					{children}

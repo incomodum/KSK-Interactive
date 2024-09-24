@@ -60,7 +60,7 @@ export default function MapComponent() {
 				))}
 			</MapContainer>
 
-			<div className="absolute left-0 top-0 z-10 py-3 px-7 flex flex-row md:flex-col gap-3">
+			<div className="absolute left-0 top-0 z-10 py-3 px-7 flex flex-row md:flex-col max-w-full overflow-x-hidden gap-3">
 				<>
 					<div className="relative hidden w-[350px] flex-grow items-center md:flex">
 						<Search className="absolute left-3 h-4 w-4 text-[#808080]" />
@@ -75,7 +75,7 @@ export default function MapComponent() {
 						<Search className="text-[#808080]" />
 					</button>
 				</>
-				<div className={cn("bg-[#F3F3F3] p-2 w-[350px] border flex flex-col gap-3 rounded-[8px]")}>
+				<div className={cn("bg-[#F3F3F3] p-2 max-w-[90%] md:max-w-[350px] w-[350px] border flex flex-col gap-3 rounded-[8px]")}>
 					<div className="flex flex-row justify-between">
 						<p className="text-[#2B2B2B] font-medium">Dáta</p>
 						<button onClick={toggle} type="button">
