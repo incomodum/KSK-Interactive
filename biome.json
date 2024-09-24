@@ -1,0 +1,52 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.2/schema.json",
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab",
+		"indentWidth": 4,
+		"lineWidth": 150
+	},
+	"javascript": {
+		"formatter": {
+			"semicolons": "asNeeded",
+			"trailingCommas": "none",
+			"lineWidth": 150,
+			"jsxQuoteStyle": "double"
+		}
+	},
+	"organizeImports": {
+		"enabled": false
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"complexity": {
+				"noUselessFragments": "warn"
+			},
+			"correctness": {
+				"noUnusedVariables": "warn",
+				"noUnusedImports": "warn"
+			}
+		}
+	},
+	"files": {
+		"include": ["./*.ts", "./**/*.tsx"],
+		"ignore": [
+			"./*.d.ts",
+			"./node-modules",
+			"./.next",
+			"./.vscode",
+			"./yarn.lock",
+			"./ios",
+			"./android",
+			"./.DS_Store",
+			"./*.lock",
+			"./.gitattributes",
+			"*.md",
+			"*.ttf",
+			"*.png",
+			"*.yml"
+		]
+	}
+}

@@ -1,0 +1,172 @@
+{"type":"FeatureCollection", "features":[
+    {
+      "type": "Feature",
+      "id": "skoly_zriadovatel_ksk.35",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.250268,
+          48.713731,
+          0
+        ]
+      },
+      "geometry_name": "geom",
+      "properties": {
+        "organizaci": "SOŠ technická Košice",
+        "ico": "00893340",
+        "druh": "Školské",
+        "typ": "Stredná odborná škola",
+        "psc": "040 01",
+        "web": "https://www.soskuke.sk/",
+        "organiza_4": "Kukučínova 23",
+        "organiza_6": "Košice"
+      },
+      "bbox": [
+        21.250268,
+        48.713731,
+        21.250268,
+        48.713731
+      ]
+    },
+    {
+      "type": "Feature",
+      "id": "skoly_zriadovatel_ksk.40",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.17893,
+          48.631365,
+          0
+        ]
+      },
+      "geometry_name": "geom",
+      "properties": {
+        "organizaci": "SOŠ priemyselných technológií, Košice-Šaca",
+        "ico": "17050367",
+        "druh": "Školské",
+        "typ": "Stredná odborná škola",
+        "psc": "040 15",
+        "web": "http://www.sossaca.sk/",
+        "organiza_4": "Učňovská 5",
+        "organiza_6": "Košice"
+      },
+      "bbox": [
+        21.17893,
+        48.631365,
+        21.17893,
+        48.631365
+      ]
+    },
+    {"type":"Feature","id":"skoly_zriadovatel_ksk.42","geometry":{"type":"Point","coordinates":[21.244985,48.705106,0]},"geometry_name":"geom","properties":{"organizaci":"SO\u0160 automobilov\u00e1 Ko\u0161ice","ico":"17078407","druh":"\u0160kolsk\u00e9","typ":"Stredn\u00e1 odborn\u00e1 \u0161kola","psc":"041 99","web":"https://sosake.sk/","organiza_4":"Moldavsk\u00e1 cesta 2","organiza_6":"Ko\u0161ice"},"bbox":[21.244985,48.705106,21.244985,48.705106]},
+    {
+      "type": "Feature",
+      "id": "skoly_zriadovatel_ksk.44",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.527377,
+          48.658116,
+          0
+        ]
+      },
+      "geometry_name": "geom",
+      "properties": {
+        "organizaci": "SOŠ technická Rožňava",
+        "ico": "17050545",
+        "druh": "Školské",
+        "typ": "Stredná odborná škola",
+        "psc": "048 01",
+        "web": "https://sostrv.edupage.org/",
+        "organiza_4": "Hviezdoslavova 5",
+        "organiza_6": "Rožňava"
+      },
+      "bbox": [
+        20.527377,
+        48.658116,
+        20.527377,
+        48.658116
+      ]
+    },
+    {
+      "type": "Feature",
+      "id": "skoly_zriadovatel_ksk.51",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.924328,
+          48.759761,
+          0
+        ]
+      },
+      "geometry_name": "geom",
+      "properties": {
+        "organizaci": "SOŠ technická Michalovce",
+        "ico": "42096651",
+        "druh": "Školské",
+        "typ": "Stredná odborná škola",
+        "psc": "071 92",
+        "web": "https://sostmi.edupage.org/",
+        "organiza_4": "Partizánska 1",
+        "organiza_6": "Michalovce"
+      },
+      "bbox": [
+        21.924328,
+        48.759761,
+        21.924328,
+        48.759761
+      ]
+    },
+    {
+      "type": "Feature",
+      "id": "skoly_zriadovatel_ksk.54",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.006504,
+          48.38988,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "skoly_zriadovatel_ksk.55",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.977096,
+          48.420743,
+          0
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "id": "skoly_zriadovatel_ksk.61",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.566771,
+          48.947255,
+          0
+        ]
+      },
+      "geometry_name": "geom",
+      "properties": {
+        "organizaci": "Stredná priemyselná škola technická",
+        "ico": "00521663",
+        "druh": "Školské",
+        "typ": "Stredná priemyselná škola",
+        "psc": "052 01",
+        "web": "https://strojsnv.edupage.org/",
+        "organiza_4": "Hviezdoslavova 6",
+        "organiza_6": "Spišská Nová Ves"
+      },
+      "bbox": [
+        20.566771,
+        48.947255,
+        20.566771,
+        48.947255
+      ]
+    }]}

@@ -1,0 +1,9 @@
+{
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.next": true
+  },
+  "i18n-ally.localesPaths": [
+    "locales"
+  ]
+}
