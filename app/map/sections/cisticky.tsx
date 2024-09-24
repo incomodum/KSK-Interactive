@@ -2,15 +2,10 @@ import { Source, Layer, type LayerProps } from "react-map-gl/maplibre"
 
 import datajson from "./cisticky.json"
 import type { MapSection } from "../types"
-import { reproject } from "reproject"
-import proj4 from "proj4"
+import { convertToWGS84 } from "~/lib/utils"
 
 export default function Cisticky() {
-	const dataobj = reproject(
-		datajson,
-		"+proj=krovak +lat_0=49.5 +lon_0=24.8333333333333 +alpha=30.2881397527778 +k=0.9999 +x_0=0 +y_0=0 +ellps=bessel +towgs84=589,76,480,0,0,0,0 +units=m +no_defs +type=crs",
-		proj4.WGS84
-	)
+	const dataobj = convertToWGS84(datajson)
 	const { opacity = 0.5, color = "#D94F70" }: MapSection = {}
 	const layerStyle: LayerProps = {
 		id: "water-treatment",
