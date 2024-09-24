@@ -18,7 +18,7 @@ export default function MapComponent() {
 				minZoom={8}
 				maxZoom={18}
 				style={{ width: "100%", height: "100%", zIndex: 1 }}
-				mapStyle="https://api.maptiler.com/maps/streets/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL"
+				mapStyle="https://api.maptiler.com/maps/streets/style.json?key=MXHW1WQksbFLUTsILGLR"
 				interactiveLayerIds={["data"]}
 			>
 				<Schools />
